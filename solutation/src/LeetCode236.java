@@ -3,10 +3,10 @@ import java.util.Map;
 
 public class LeetCode236 {
 
-    public static void main(String args[]) {
-        Solution solution = new Solution();
-        System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
-    }
+//    public static void main(String args[]) {
+//        Solution solution = new Solution();
+//        System.out.println(solution.lowestCommonAncestor("abcabcbb"));
+//    }
 
     class Solution {
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
