@@ -1,45 +1,28 @@
-import java.util.Stack;
-
 public class LeetCode9 {
 
-    class CQueue {
-
-        Stack<Integer> ASC;
-        Stack<Integer> DESC;
-
-        public CQueue() {
-            ASC = new Stack<>();
-            DESC = new Stack<>();
-        }
-
-        public void appendTail(int value) {
-            if (DESC.empty()) {
-                change();
-            }
-            ASC.push(value);
-        }
-
-        private void change() {
-            if (ASC.empty()) {
-                while (!DESC.empty()) {
-                    ASC.push(DESC.pop());
+    class Solution {
+        public int kthSmallest(int[][] matrix, int k) {
+            int[] offsets = new int[matrix.length];
+            int minValue = matrix[0][0];
+            int maxValue = matrix[matrix.length - 1][matrix.length - 1];
+            while (k > 0) {
+                int nextValue = maxValue;
+                int line = matrix.length - 1;
+                for (int i = 0; i < matrix.length; i++) {
+                    int offset = offsets[i];
+                    if (matrix[i].length > offset) {
+                        int value = matrix[i][offset];
+                        if (value < nextValue) {
+                            nextValue = value;
+                            line = i;
+                        }
+                    }
                 }
-            } else {
-                while (!ASC.empty()) {
-                    DESC.push(ASC.pop());
-                }
+                offsets[line] = offsets[line] + 1;
+                minValue = nextValue;
+                k--;
             }
-        }
-
-        public int deleteHead() {
-            if (ASC.empty() && DESC.empty()) {
-                return -1;
-            } else {
-                if (DESC.empty()) {
-                    change();
-                }
-                return DESC.pop();
-            }
+            return minValue;
         }
     }
 
