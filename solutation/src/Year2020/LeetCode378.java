@@ -1,7 +1,9 @@
+package Year2020;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class LeetCode355 {
+public class LeetCode378 {
 
     public static void main(String[] args) {
 

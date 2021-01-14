@@ -1,3 +1,5 @@
+package Year2020;
+
 public class LeetCode718 {
 
     class Solution {

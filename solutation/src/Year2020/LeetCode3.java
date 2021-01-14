@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+package Year2020;
+
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LeetCode3 {
