@@ -1,9 +1,7 @@
 package Year2021.Month02;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * https://leetcode-cn.com/problems/subarrays-with-k-different-integers/
