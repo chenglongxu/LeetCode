@@ -1,7 +1,5 @@
 package Year2021.Month10;
 
-import java.util.Locale;
-
 public class LeetCode453 {
 
     public static void main(String[] args) {
