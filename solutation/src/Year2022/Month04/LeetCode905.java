@@ -10,15 +10,15 @@ public class LeetCode905 {
     public static int[] sortArrayByParity(int[] nums) {
         int[] newNums = new int[nums.length];
         int cursor = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] % 2 == 0) {
-                newNums[cursor] = nums[i];
+        for (int num : nums) {
+            if (num % 2 == 0) {
+                newNums[cursor] = num;
                 cursor++;
             }
         }
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] % 2 == 1) {
-                newNums[cursor] = nums[i];
+        for (int num : nums) {
+            if (num % 2 == 1) {
+                newNums[cursor] = num;
                 cursor++;
             }
         }
