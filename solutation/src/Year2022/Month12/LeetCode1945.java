@@ -1,7 +1,7 @@
 package Year2022.Month12;
 
 /**
- * https://leetcode.cn/problems/check-if-the-sentence-is-pangram/
+ * https://leetcode.cn/problems/sum-of-digits-of-string-after-convert/
  *
  * @author xuchenglong
  */
