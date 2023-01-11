@@ -1,5 +1,8 @@
 package Year2023.Month01;
 
+/**
+ * https://leetcode.cn/problems/check-if-number-has-equal-digit-count-and-digit-value/submissions/394636757/
+ */
 public class LeetCode2283 {
 
     public static void main(String[] args) {
