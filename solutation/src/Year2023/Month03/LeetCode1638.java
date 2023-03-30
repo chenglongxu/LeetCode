@@ -35,4 +35,25 @@ public class LeetCode1638 {
         return returnValue;
     }
 
+//    public static int countSubstrings(String s, String t) {
+//        int returnValue = 0; //返回符合条件的字符总数
+//        for (int i = 0; i < s.length(); i++) {  //从s字符的第一位开始递加
+//            for (int j = 0; j < t.length(); j++) {  //从t字符的第一位开始递加
+//                int differ = 0; //两个字符拼接的不一样的字符数量
+//                for (int k = 0; i + k < s.length() && j + k < t.length(); k++) {    //位数增加
+//                    if (s.charAt(i + k) != t.charAt(j + k)) {   //如果不一样，differ加1
+//                        differ++;
+//                    }
+//                    if (differ == 1) {
+//                        returnValue++;
+//                    }
+//                    if (differ > 1) {
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//        return returnValue;
+//    }
+
 }
