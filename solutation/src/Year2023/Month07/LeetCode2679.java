@@ -15,7 +15,7 @@ public class LeetCode2679 {
 
     public static int matrixSum(int[][] nums) {
         for (int i = 0; i < nums.length; i++) {
-            nums[i] = Arrays.stream(nums[i]).sorted().toArray();
+            Arrays.sort(nums[i]);
         }
         int returnValue = 0;
         for (int i = 0; i < nums[0].length; i++) {
