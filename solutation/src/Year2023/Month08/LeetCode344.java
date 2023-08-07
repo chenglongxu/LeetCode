@@ -1,9 +1,7 @@
 package Year2023.Month08;
 
-import Year2023.Month07.LeetCode445;
-
 /**
- * https://leetcode.cn/problems/reverse-string/description/
+ * <a href="https://leetcode.cn/problems/reverse-string/description/">...</a>
  */
 public class LeetCode344 {
 
